@@ -1,0 +1,15 @@
+language: ruby
+dist: xenial
+sudo: false
+rvm:
+  - 2.5.1
+services:
+  - postgresql
+before_script:
+  - bundle exec rails db:create
+notifications:
+  email:
+    recipients:
+      - "mallikarjunece@gmail.com"
+    on_success: "change"
+    on_failure: "always"
