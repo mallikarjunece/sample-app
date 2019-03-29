@@ -9,6 +9,7 @@ before_install:
   - gem install bundler
 before_script:
   - bundle exec rails db:create
+  - bundle exec rails db:migrate
 notifications:
   email:
     recipients:
